@@ -1,0 +1,332 @@
+{
+  "Routes": [
+    // Authen Admin
+    {
+      "DownstreamPathTemplate": "/api/Authen/AdminAuthen",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5032
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Authen/Admin",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Authen Auctioneer
+    {
+      "DownstreamPathTemplate": "/api/Authen/AuctioneerAuthen",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5032
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Authen/Auctioneer",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Authen Bidder
+    {
+      "DownstreamPathTemplate": "/api/Authen/BidderAuthen",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5032
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Authen/Bidder",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Product Approve
+    {
+      "DownstreamPathTemplate": "/api/Product/Approve/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/Approve/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product Reject
+    {
+      "DownstreamPathTemplate": "/api/Product/Approve/{id}/{message}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/Reject/{id}/{message}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product GetDetail
+    {
+      "DownstreamPathTemplate": "/api/Product/GetDetail/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetDetail/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetDetailProductForAuctioneer/{id}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetDetailProductForAuctioneer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetDetailProductForAuctioneer/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetDetailProductForBidder/{id}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetDetailProductForBidder/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetDetailProductForBidder/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetListProcessingProductByAdmin
+    {
+      "DownstreamPathTemplate": "/api/Product/GetListProcessingProductByAdmin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetListProcessingProductByAdmin",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetListHistoryAuctionByAdmin
+    {
+      "DownstreamPathTemplate": "/api/Product/GetListHistoryAuctionByAdmin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetListHistoryAuctionByAdmin",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetDetaiHistoryAuctionByAdmin/{id}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetDetaiHistoryAuctionByAdmin/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetDetaiHistoryAuctionByAdmin/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetListProductAllStatusByAuctioneerID/{id}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetListProductAllStatusByAuctioneerID/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetListProductAllStatusByAuctioneerID/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetListWinnerProductByBidder/{id}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetListWinnerProductByBidder/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetListWinnerProductByBidder/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetDetailWinnerProductByBidder/{bidderId}/{productId}
+    {
+      "DownstreamPathTemplate": "/api/Product/GetDetailWinnerProductByBidder/{bidderId}/{productId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetDetailWinnerProductByBidder/{bidderId}/{productId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - GetListProductAuctioning
+    {
+      "DownstreamPathTemplate": "/api/Product/GetListProductAuctioning",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/GetListProductAuctioning",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - IsProductAuctioning/{auctionId}
+    {
+      "DownstreamPathTemplate": "/api/Product/IsProductAuctioning/{auctionId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/IsProductAuctioning/{auctionId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Product - Create
+    {
+      "DownstreamPathTemplate": "/api/Product/Create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/Create",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Product - Update
+    {
+      "DownstreamPathTemplate": "/api/Product/Update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/Update",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Product - SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}
+    {
+      "DownstreamPathTemplate": "/api/Product/SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5253
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Product/SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Payment - Create
+    {
+      "DownstreamPathTemplate": "/api/Payment/Create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5057
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Payment/Create",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // Search - GetListCategory
+    {
+      "DownstreamPathTemplate": "/api/Search/GetListCategory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5088
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Search/GetListCategory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Search - GetListProductAuctioningByCategory/{id}
+    {
+      "DownstreamPathTemplate": "/api/Search/GetListProductAuctioningByCategory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5088
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Search/GetListProductAuctioningByCategory/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Search - SearchNameProduct
+    {
+      "DownstreamPathTemplate": "/api/Search/SearchNameProduct",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5088
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Search/SearchNameProduct",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Search - SearchProductByProductName/{productName}
+    {
+      "DownstreamPathTemplate": "/api/Search/SearchProductByProductName/{productName}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5088
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Search/SearchProductByProductName/{productName}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Search - SearchByProductNameAndCategory/{categoryId}/{selectedOptions}
+    {
+      "DownstreamPathTemplate": "/api/Search/SearchByProductNameAndCategory/{categoryId}/{selectedOptions}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5088
+        }
+      ],
+      "UpstreamPathTemplate": "/getway/Search/SearchByProductNameAndCategory/{categoryId}/{selectedOptions}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost"
+  }
+}
