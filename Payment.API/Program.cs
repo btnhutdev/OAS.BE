@@ -3,7 +3,6 @@ using Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Payment.API.Application;
 using Payment.API.Interfaces;
-using Product.API.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 

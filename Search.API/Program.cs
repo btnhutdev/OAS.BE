@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Search.API.Application;
 using Search.API.Interfaces;
 using Search.API.Repositories;
-using static Org.BouncyCastle.Math.EC.ECCurve;
 
 var builder = WebApplication.CreateBuilder(args);
 

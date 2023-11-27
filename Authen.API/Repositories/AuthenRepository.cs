@@ -1,5 +1,4 @@
 ﻿using Authen.API.Interfaces;
-using AutoMapper;
 using Core.ViewModel;
 using Domain.Entities;
 using Infrastructure.Contexts;
