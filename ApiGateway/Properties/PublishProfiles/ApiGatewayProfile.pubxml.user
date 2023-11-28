@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\source\OAS\OAS.BE\ApiGateway\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-11-28T05:20:09.2290560Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
