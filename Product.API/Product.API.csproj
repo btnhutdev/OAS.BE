@@ -14,7 +14,7 @@
 	  <NoWarn>1701;1702;8602;8603;</NoWarn>
 	</PropertyGroup>
 
-	<ItemGroup>
+  <ItemGroup>
 		<PackageReference Include="AutoMapper" Version="12.0.1" />
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
 		<PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
