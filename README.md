@@ -31,7 +31,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## Introduction
+## About the project
 
 Project: Online Auction System (OAS)<br>
 Part 1: Source Code back-end.<br>
