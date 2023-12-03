@@ -17,7 +17,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#requirements">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -31,7 +31,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About the project
+## About The Project
 
 Project: Online Auction System (OAS)<br>
 Part 1: Source Code back-end.<br>
@@ -73,7 +73,7 @@ The project is built based on the following frameworks/libraries:
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Requirements
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
