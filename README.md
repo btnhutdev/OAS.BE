@@ -30,23 +30,19 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Introduction
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Project: Online Auction System (OAS)<br>
+Part 1: Source Code back-end.<br>
+Part 2: Source Code front-end.<br>
+This is the first part of the project.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The system supports users to participate in online product auctions.<br>
+Users can post products for auction.<br>
+Users can also participate in product auctions.<br>
+After successfully bidding on the product, users can make online payments on the system.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,16 +50,18 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The project is built based on the following frameworks/libraries:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* ![C#](https://img.shields.io/badge/C%23-8A2BE2.svg?style=for-the-badge&logo=C%23)
+* ![dotNET Core](https://img.shields.io/badge/.NET%20Core-purple?style=for-the-badge&logo=dotNET)
+* ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-purple?style=for-the-badge&logo=dotnet)
+* ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
+* ![Redis](https://img.shields.io/badge/Redis-black?style=for-the-badge&logo=Redis)
+* ![AmazonS3](https://img.shields.io/badge/Amazon%20S3-green?style=for-the-badge&logo=Amazon%20S3)
+* ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=web%20token)
+* ![RESTful API](https://img.shields.io/badge/RESTful%20API-blue?style=for-the-badge&logo=RESTful%20API)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
