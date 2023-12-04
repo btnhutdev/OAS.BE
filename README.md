@@ -71,19 +71,26 @@ To get a local copy up and running follow these simple example steps.
 
 ### Requirements
 
-This is an example of how to list things you need to use the software and how to install them.
-* MS SQL Server, Version = 2022 or later
-* dotNet, Version = 6.0 or later
-* Redis, Version = 3.0.504 or later
+Before you continue, ensure you meet the following requirements:
+* MS SQL Server, Version = 2022
+* dotNet, Version = 6.0
+* Redis, Version = 3.0.504
 * AWS IAM Account or Root Account
-* Hangfire Core, Version = 1.8.5.0 or later
+* Hangfire Core, Version = 1.8.5.0
 * Gmail Account
+* OS: Windows
 
 ### Installation
 
-
-1. Create account AWS 
-2. 
+I am deploying the system on Docker but it is not yet completed, in the meantime you can install the system and components manually as follows:
+1. First you need to install dotNet 6.0 or later.
+2. After installation, next you install MS SQL Server Version 2022 or later.
+3. You can install an IDE to code C# such as Visual Studio or another IDE, my project uses Visual Studio 2022.
+4. Install Redis Version = 3.0.504 or later.
+5. Next, you can Clone the source code or Download the Zip file project OAS.BE
+Note: This project only contains the back-end source code of the project, if you need the full project, you need to install the OAS.FE project in my github. You can refer ![**here**](https://github.com/btnhutdev/OAS.FE)
+6. 
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
