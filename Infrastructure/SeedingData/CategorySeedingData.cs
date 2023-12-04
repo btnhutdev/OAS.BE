@@ -9,10 +9,11 @@ namespace Infrastructure.SeedingData
         public static void Seed(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, IdCategory = Guid.NewGuid(), CategoryName = "Smart Phone" },
-                new Category { Id = 2, IdCategory = Guid.NewGuid(), CategoryName = "Laptop" },
-                new Category { Id = 3, IdCategory = Guid.NewGuid(), CategoryName = "Furniture" },
-                new Category { Id = 4, IdCategory = Guid.NewGuid(), CategoryName = "Motorbike" }
+                new Category { Id = 1, IdCategory = Guid.NewGuid(), CategoryName = "IPhone" },
+                new Category { Id = 2, IdCategory = Guid.NewGuid(), CategoryName = "SamSung" },
+                new Category { Id = 3, IdCategory = Guid.NewGuid(), CategoryName = "Realme" },
+                new Category { Id = 4, IdCategory = Guid.NewGuid(), CategoryName = "Xiaomi" },
+                new Category { Id = 5, IdCategory = Guid.NewGuid(), CategoryName = "Oppo" }
                 );
         }
     }
