@@ -10,7 +10,7 @@
           "Port": 5032
         }
       ],
-      "UpstreamPathTemplate": "/getway/Authen/Admin",
+      "UpstreamPathTemplate": "/gateway/Authen/Admin",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Authen Auctioneer
@@ -23,7 +23,7 @@
           "Port": 5032
         }
       ],
-      "UpstreamPathTemplate": "/getway/Authen/Auctioneer",
+      "UpstreamPathTemplate": "/gateway/Authen/Auctioneer",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Authen Bidder
@@ -36,7 +36,7 @@
           "Port": 5032
         }
       ],
-      "UpstreamPathTemplate": "/getway/Authen/Bidder",
+      "UpstreamPathTemplate": "/gateway/Authen/Bidder",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Product Approve
@@ -49,7 +49,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/Approve/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/Approve/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product Reject
@@ -62,7 +62,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/Reject/{id}/{message}",
+      "UpstreamPathTemplate": "/gateway/Product/Reject/{id}/{message}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product GetDetail
@@ -75,7 +75,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetDetail/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetDetail/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetDetailProductForAuctioneer/{id}
@@ -88,7 +88,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetDetailProductForAuctioneer/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetDetailProductForAuctioneer/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetDetailProductForBidder/{id}
@@ -101,7 +101,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetDetailProductForBidder/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetDetailProductForBidder/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetListProcessingProductByAdmin
@@ -114,7 +114,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetListProcessingProductByAdmin",
+      "UpstreamPathTemplate": "/gateway/Product/GetListProcessingProductByAdmin",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetListHistoryAuctionByAdmin
@@ -127,7 +127,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetListHistoryAuctionByAdmin",
+      "UpstreamPathTemplate": "/gateway/Product/GetListHistoryAuctionByAdmin",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetDetaiHistoryAuctionByAdmin/{id}
@@ -140,7 +140,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetDetaiHistoryAuctionByAdmin/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetDetaiHistoryAuctionByAdmin/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetListProductAllStatusByAuctioneerID/{id}
@@ -153,7 +153,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetListProductAllStatusByAuctioneerID/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetListProductAllStatusByAuctioneerID/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetListWinnerProductByBidder/{id}
@@ -166,7 +166,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetListWinnerProductByBidder/{id}",
+      "UpstreamPathTemplate": "/gateway/Product/GetListWinnerProductByBidder/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetDetailWinnerProductByBidder/{bidderId}/{productId}
@@ -179,7 +179,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetDetailWinnerProductByBidder/{bidderId}/{productId}",
+      "UpstreamPathTemplate": "/gateway/Product/GetDetailWinnerProductByBidder/{bidderId}/{productId}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - GetListProductAuctioning
@@ -192,7 +192,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/GetListProductAuctioning",
+      "UpstreamPathTemplate": "/gateway/Product/GetListProductAuctioning",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - IsProductAuctioning/{auctionId}
@@ -205,7 +205,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/IsProductAuctioning/{auctionId}",
+      "UpstreamPathTemplate": "/gateway/Product/IsProductAuctioning/{auctionId}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Product - Create
@@ -218,7 +218,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/Create",
+      "UpstreamPathTemplate": "/gateway/Product/Create",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Product - Update
@@ -231,7 +231,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/Update",
+      "UpstreamPathTemplate": "/gateway/Product/Update",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Product - SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}
@@ -244,7 +244,7 @@
           "Port": 5253
         }
       ],
-      "UpstreamPathTemplate": "/getway/Product/SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}",
+      "UpstreamPathTemplate": "/gateway/Product/SendMailNotHighestPrice/{email}/{productId}/{currentPrice}/{yourPrice}",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Payment - Create
@@ -257,7 +257,7 @@
           "Port": 5057
         }
       ],
-      "UpstreamPathTemplate": "/getway/Payment/Create",
+      "UpstreamPathTemplate": "/gateway/Payment/Create",
       "UpstreamHttpMethod": [ "Post" ]
     },
     // Search - GetListCategory
@@ -270,7 +270,7 @@
           "Port": 5088
         }
       ],
-      "UpstreamPathTemplate": "/getway/Search/GetListCategory",
+      "UpstreamPathTemplate": "/gateway/Search/GetListCategory",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Search - GetListProductAuctioningByCategory/{id}
@@ -283,7 +283,7 @@
           "Port": 5088
         }
       ],
-      "UpstreamPathTemplate": "/getway/Search/GetListProductAuctioningByCategory/{id}",
+      "UpstreamPathTemplate": "/gateway/Search/GetListProductAuctioningByCategory/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Search - SearchNameProduct
@@ -296,7 +296,7 @@
           "Port": 5088
         }
       ],
-      "UpstreamPathTemplate": "/getway/Search/SearchNameProduct",
+      "UpstreamPathTemplate": "/gateway/Search/SearchNameProduct",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Search - SearchProductByProductName/{productName}
@@ -309,7 +309,7 @@
           "Port": 5088
         }
       ],
-      "UpstreamPathTemplate": "/getway/Search/SearchProductByProductName/{productName}",
+      "UpstreamPathTemplate": "/gateway/Search/SearchProductByProductName/{productName}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     // Search - SearchByProductNameAndCategory/{categoryId}/{selectedOptions}
@@ -322,7 +322,7 @@
           "Port": 5088
         }
       ],
-      "UpstreamPathTemplate": "/getway/Search/SearchByProductNameAndCategory/{categoryId}/{selectedOptions}",
+      "UpstreamPathTemplate": "/gateway/Search/SearchByProductNameAndCategory/{categoryId}/{selectedOptions}",
       "UpstreamHttpMethod": [ "Get" ]
     }
   ],
