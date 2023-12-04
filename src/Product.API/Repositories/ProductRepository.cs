@@ -733,9 +733,9 @@ namespace Product.API.Repositories
         #endregion
 
         #region ByteArrayCompare
-        private static bool ByteArrayCompare(byte[] a1, byte[] a2)
+        private static bool ByteArrayCompare(byte[] firstArr, byte[] secondArr)
         {
-            return StructuralComparisons.StructuralEqualityComparer.Equals(a1, a2);
+            return StructuralComparisons.StructuralEqualityComparer.Equals(firstArr, secondArr);
         }
 
 
