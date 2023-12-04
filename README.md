@@ -30,7 +30,7 @@
 ## About The Project
 
 Project: Online Auction System (OAS)<br>
-Part 1: Source Code back-end.<br>
+**Part 1: Source Code back-end**.<br>
 Part 2: Source Code front-end.<br>
 This is the first part of the project.
 
@@ -90,7 +90,7 @@ I am deploying the system on Docker but it is not yet completed, in the meantime
 * For the database, you have two options:
    * Using the function Import a data-tier application with the file Database.bacpac
    * Using Entity Framework Core Code First.
-* You also need to customize information such as AWS account, Email Configuration, Connection Strings, JWT Token,... in the Core\appsettings.json file.
+* You also need to customize information such as AWS account, Email Configuration, Connection Strings, JWT Token,... in the **Core\appsettings.json** file.
 * Next install AWS CLI version 2 and log in to your AWS account with S3 access.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +108,7 @@ I am deploying the system on Docker but it is not yet completed, in the meantime
   * So when running, it will not open a browser window.
   * If you want to open a browser window, set "launchBrowser": true.
 * You can run the project in local by clicking Start in Visual Studio.
-* You can access the address localhost:port\dashboard to enter the Hangfire interface to manage Tasks.
+* You can access the address **localhost:port\dashboard** to enter the Hangfire interface to manage Tasks.
 <p align="center">
   <img src="img/DemoHangfire.PNG" width=1000><br/>
   <i>Hangfire Dashboard</i>
