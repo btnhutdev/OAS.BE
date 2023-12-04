@@ -61,8 +61,7 @@ The project is built based on the following frameworks/libraries:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +95,6 @@ I am deploying the system on Docker but it is not yet completed, in the meantime
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 * Right-click Solution in the Solution Explorer window, select Properties, select Multiple startup projects. Select action start for projects:
@@ -106,9 +104,15 @@ I am deploying the system on Docker but it is not yet completed, in the meantime
   * Product.API
   * Search.API
 * You can run the project in local by clicking Start in Visual Studio.
-* **Note**: I have set "launchBrowser": false in projects Authen, Payment, Search, ApiGateway. So when running, it will not open a browser window. If you want to open a browser window, set "launchBrowser": true.
-
-
+* **Note**: I have set "launchBrowser": false in projects Authen, Payment, Search, ApiGateway.
+  * So when running, it will not open a browser window.
+  * If you want to open a browser window, set "launchBrowser": true.
+* You can run the project in local by clicking Start in Visual Studio.
+* You can access the address localhost:port\dashboard to enter the Hangfire interface to manage Tasks.
+<p align="center">
+  <img src="img/DemoHangfire.PNG" width=1000><br/>
+  <i>Hangfire Dashboard</i>
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
