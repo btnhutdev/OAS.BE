@@ -39,10 +39,7 @@ Users can post products for auction.<br>
 Users can also participate in product auctions.<br>
 After successfully bidding on the product, users can make online payments on the system.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -59,15 +56,15 @@ The project is built based on the following frameworks/libraries:
 * ![RESTful API](https://img.shields.io/badge/RESTful%20API-blue?style=for-the-badge&logo=RESTful%20API)
 * ![Ocelot](https://img.shields.io/badge/Ocelot-black?style=for-the-badge&logo=Ocelot)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Requirements
 
@@ -80,6 +77,8 @@ Before you continue, ensure you meet the following requirements:
 * Gmail Account
 * OS: Windows
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Installation
 
 I am deploying the system on Docker but it is not yet completed, in the meantime you can install the system and components manually as follows:
@@ -89,24 +88,32 @@ I am deploying the system on Docker but it is not yet completed, in the meantime
 * Install Redis version = 3.0.504 or later.
 * Next, you can Clone the source code or Download the Zip file project OAS.BE.
 * **Note**: This project only contains the back-end source code of the project, if you need the full project, you need to install the OAS.FE project in my github. I have a pin on my github homepage or you can refer to it [**here**](https://github.com/btnhutdev/OAS.FE)
-* 
-   
+* For the database, you have two options:
+   * Using the function Import a data-tier application with the file Database.bacpac
+   * Using Entity Framework Core Code First.
+* You also need to customize information such as AWS account, Email Configuration, Connection Strings, JWT Token,... in the Core\appsettings.json file.
+* Next install AWS CLI version 2 and log in to your AWS account with S3 access.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+* Right-click Solution in the Solution Explorer window, select Properties, select Multiple startup projects. Select action start for projects:
+  * ApiGateway
+  * Authen.API
+  * Payment.API
+  * Product.API
+  * Search.API
+* You can run the project in local by clicking Start in Visual Studio.
+* **Note**: I have set "launchBrowser": false in projects Authen, Payment, Search, ApiGateway. So when running, it will not open a browser window. If you want to open a browser window, set "launchBrowser": true.
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
