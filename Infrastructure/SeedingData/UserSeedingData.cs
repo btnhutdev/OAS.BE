@@ -17,7 +17,7 @@ namespace Infrastructure.SeedingData
                     Username = "admin",
                     Password = "123",
                     PhoneNumber = "0111222333",
-                    Email = "admin@gmail.com",
+                    Email = "your email",
                     FirstName = "Cam",
                     LastName = "Nguyen Van",
                     Gender = false,
@@ -30,7 +30,7 @@ namespace Infrastructure.SeedingData
                      Username = "bid01",
                      Password = "123",
                      PhoneNumber = "0222333444",
-                     Email = "buitruongnhutlm@gmail.com",
+                     Email = "your email",
                      FirstName = "Huong",
                      LastName = "Nguyen Thi",
                      Gender = false,
@@ -43,7 +43,7 @@ namespace Infrastructure.SeedingData
                      Username = "bid02",
                      Password = "123",
                      PhoneNumber = "0222333444",
-                     Email = "buitruongnhatlm@gmail.com",
+                     Email = "your email",
                      FirstName = "Huynh",
                      LastName = "Tran Van",
                      Gender = false,
@@ -56,12 +56,25 @@ namespace Infrastructure.SeedingData
                      Username = "auc01",
                      Password = "123",
                      PhoneNumber = "0123456789",
-                     Email = "buitruongnhatlm@gmail.com",
+                     Email = "your email",
                      FirstName = "Hung",
                      LastName = "Le Van",
                      Gender = true,
                      IdPermission = new Guid("C05BDDA5-10BE-4837-8120-CD3E92A1B6B6")
-                 });
+                 },
+                new User
+                {
+                    Id = 5,
+                    IdUser = Guid.NewGuid(),
+                    Username = "auc02",
+                    Password = "123",
+                    PhoneNumber = "0123456789",
+                    Email = "your email",
+                    FirstName = "Hung",
+                    LastName = "Le Van",
+                    Gender = true,
+                    IdPermission = new Guid("C05BDDA5-10BE-4837-8120-CD3E92A1B6B6")
+                });
         }
     }
 }
