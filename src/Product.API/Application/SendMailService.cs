@@ -137,7 +137,7 @@ namespace Product.API.Application
         #region CreateSendMailRejectMessage
         private MimeMessage CreateSendMailRejectMessage(MailMessage message, MailModel detail, string reason)
         {
-            var emailMessage = new MimeMessage();
+            var emailMessage = new MimeMessage();   
             var bodyBuilder = new BodyBuilder();
 
             emailMessage.From.Add(new MailboxAddress(_emailConfig.From));

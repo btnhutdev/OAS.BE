@@ -3,12 +3,16 @@ using Core.ViewModel;
 using MailKit.Net.Smtp;
 using MimeKit;
 using Payment.API.Interfaces;
+using System.Globalization;
 using System.Security.Authentication;
+using CoreResource = Core.Properties;
 
 namespace Payment.API.Application
 {
     public class SendMailService : ISendMailService
     {
+        public readonly CultureInfo vietnameseCulture = new CultureInfo("vi-VN");
+
         #region constructor
         private readonly EmailConfiguration _emailConfig;
 
@@ -50,15 +54,8 @@ namespace Payment.API.Application
             string formatedStartDate = formatDate(detail.StartDate);
 
             // Construct the HTML body using message properties
-            string htmlBody = $@"
-                            <h4 style='color:green;'>Your product has been successfully auctioned and sold.</h4>
-                            <p><strong>Your product information</strong></p>
-                            <p><strong>Product's name:</strong> {detail.ProductName}</p>
-                            <p><strong>Price:</strong> {formatedCurrentPrice}</p>
-                            <p><strong>Date sold:</strong> {formatedStartDate}</p>
-                            <br/>
-                            <p>To view auction details, you can log into the system, go to the auction history section.</p>
-                            <p>Sincerely thank you.</p>";
+            string htmlBody = string.Format(vietnameseCulture, CoreResource.EmailBodyResources.EmailSuccessPaymentToAuctioneer,
+                detail.ProductName, formatedCurrentPrice, formatedStartDate);
 
             bodyBuilder.HtmlBody = htmlBody;
             emailMessage.Body = bodyBuilder.ToMessageBody();
@@ -80,22 +77,9 @@ namespace Payment.API.Application
             string formateTelephone = formatPhoneNumber(detail.Telephone);
 
             // Construct the HTML body using message properties
-            string htmlBody = $@"
-                            <h4 style='color:green;'>Your order has been processed successfully.</h4>
-                            <p><strong>Your order information</strong></p>
-                            <p><strong>Product's name:</strong> {productName}</p>
-                            <p><strong>FirstName:</strong> {detail.FirstName}</p>
-                            <p><strong>LastName:</strong> {detail.LastName}</p>
-                            <p><strong>Date payment:</strong> {formatedDate}</p>
-                            <p><strong>Shiping Address:</strong> {detail.ShipingAddress}</p>
-                            <p><strong>Telephone:</strong> {formateTelephone}</p>
-                            <p><strong>OrderType:</strong> {detail.OrderType}</p>
-                            <p><strong>Product Price:</strong> {formatedTotalPrice}</p>
-                            <p><strong>Shipping:</strong> Free</p>
-                            <p><strong>Total Price:</strong> {formatedTotalPrice}</p>
-                            <p><strong>Order Notes:</strong> {detail.OrderNotes}</p>
-                            <br/>
-                            <p>Sincerely thank you.</p>";
+            string htmlBody = string.Format(vietnameseCulture, CoreResource.EmailBodyResources.EmailPaymentSuccessToBidder,
+                productName, detail.FirstName, detail.LastName, formatedDate, detail.ShipingAddress,
+                formateTelephone, detail.OrderType, formatedTotalPrice, formatedTotalPrice, detail.OrderNotes);
 
             bodyBuilder.HtmlBody = htmlBody;
             emailMessage.Body = bodyBuilder.ToMessageBody();

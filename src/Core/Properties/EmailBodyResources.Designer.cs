@@ -106,6 +106,26 @@ namespace Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;h4 style=&apos;color:green;&apos;&gt;Your order has been processed successfully.&lt;/h4&gt;
+        ///&lt;p&gt;&lt;strong&gt;Your order information&lt;/strong&gt;&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Product&apos;s name:&lt;/strong&gt; {0}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;FirstName:&lt;/strong&gt; {1}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;LastName:&lt;/strong&gt; {2}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Date payment:&lt;/strong&gt; {3}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Shiping Address:&lt;/strong&gt; {4}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Telephone:&lt;/strong&gt; {5}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;OrderType:&lt;/strong&gt; {6}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Product Price:&lt;/strong&gt; {7}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Shipping:&lt;/strong&gt; Free&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;T [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string EmailPaymentSuccessToBidder {
+            get {
+                return ResourceManager.GetString("EmailPaymentSuccessToBidder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;h4 style=&apos;color:green;&apos;&gt;Your price is not the highest price&lt;/h4&gt;
         ///&lt;p&gt;&lt;strong&gt;Auction information&lt;/strong&gt;&lt;/p&gt;
         ///&lt;p&gt;&lt;strong&gt;Product&apos;s name:&lt;/strong&gt; {0}&lt;/p&gt;
@@ -156,6 +176,22 @@ namespace Core.Properties {
         public static string EmailSuccessAuction {
             get {
                 return ResourceManager.GetString("EmailSuccessAuction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h4 style=&apos;color:green;&apos;&gt;Your product has been successfully auctioned and sold.&lt;/h4&gt;
+        ///&lt;p&gt;&lt;strong&gt;Your product information&lt;/strong&gt;&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Product&apos;s name:&lt;/strong&gt; {0}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Price:&lt;/strong&gt; {1}&lt;/p&gt;
+        ///&lt;p&gt;&lt;strong&gt;Date sold:&lt;/strong&gt; {2}&lt;/p&gt;
+        ///&lt;br/&gt;
+        ///&lt;p&gt;To view auction details, you can log into the system, go to the auction history section.&lt;/p&gt;
+        ///&lt;p&gt;Sincerely thank you.&lt;/p&gt;.
+        /// </summary>
+        public static string EmailSuccessPaymentToAuctioneer {
+            get {
+                return ResourceManager.GetString("EmailSuccessPaymentToAuctioneer", resourceCulture);
             }
         }
     }

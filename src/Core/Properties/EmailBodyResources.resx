@@ -145,6 +145,23 @@
 &lt;p&gt;To view auction details, you can log into the system, go to the auction history section.&lt;/p&gt;
 &lt;p&gt;Sincerely thank you.&lt;/p&gt;</value>
   </data>
+  <data name="EmailPaymentSuccessToBidder" xml:space="preserve">
+    <value>&lt;h4 style='color:green;'&gt;Your order has been processed successfully.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Your order information&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product's name:&lt;/strong&gt; {0}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FirstName:&lt;/strong&gt; {1}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LastName:&lt;/strong&gt; {2}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Date payment:&lt;/strong&gt; {3}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shiping Address:&lt;/strong&gt; {4}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Telephone:&lt;/strong&gt; {5}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OrderType:&lt;/strong&gt; {6}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product Price:&lt;/strong&gt; {7}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shipping:&lt;/strong&gt; Free&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Total Price:&lt;/strong&gt; {8}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Order Notes:&lt;/strong&gt; {9}&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Sincerely thank you.&lt;/p&gt;</value>
+  </data>
   <data name="EmailPriceNotHighest" xml:space="preserve">
     <value>&lt;h4 style='color:green;'&gt;Your price is not the highest price&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Auction information&lt;/strong&gt;&lt;/p&gt;
@@ -178,6 +195,16 @@
 &lt;p&gt;&lt;strong&gt;Your price:&lt;/strong&gt; {4}&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Start time:&lt;/strong&gt; {5}&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;End time:&lt;/strong&gt; {6}&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;To view auction details, you can log into the system, go to the auction history section.&lt;/p&gt;
+&lt;p&gt;Sincerely thank you.&lt;/p&gt;</value>
+  </data>
+  <data name="EmailSuccessPaymentToAuctioneer" xml:space="preserve">
+    <value>&lt;h4 style='color:green;'&gt;Your product has been successfully auctioned and sold.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Your product information&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product's name:&lt;/strong&gt; {0}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Price:&lt;/strong&gt; {1}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Date sold:&lt;/strong&gt; {2}&lt;/p&gt;
 &lt;br/&gt;
 &lt;p&gt;To view auction details, you can log into the system, go to the auction history section.&lt;/p&gt;
 &lt;p&gt;Sincerely thank you.&lt;/p&gt;</value>

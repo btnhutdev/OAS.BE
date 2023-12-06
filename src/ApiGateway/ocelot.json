@@ -54,7 +54,7 @@
     },
     // Product Reject
     {
-      "DownstreamPathTemplate": "/api/Product/Approve/{id}/{message}",
+      "DownstreamPathTemplate": "/api/Product/Reject/{id}/{message}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {

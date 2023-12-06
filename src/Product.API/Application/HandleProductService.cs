@@ -306,24 +306,24 @@ namespace Product.API.Application
         #region Calculator Duration
         private float CalculatorDuration(double price)
         {
-            if (price < 5000000) // nhỏ hơn 2 triệu, thời gian đấu giá 2 phút
+            if (price < 5000000) // nhỏ hơn 5 triệu, thời gian đấu giá 3 phút
             {
-                float duration = 2;
+                float duration = 3;
                 return duration;
             }
-            else if (price < 10000000) // nhỏ hơn 4 triệu, thời gian đấu giá 4 phút
+            else if (price < 10000000) // từ 5 triệu đến nhỏ hơn 10 triệu, thời gian đấu giá 5 phút
             {
-                float duration = 4;
+                float duration = 5;
                 return duration;
             }
-            else if (price < 50000000) // nhỏ hơn 8 triệu, thời gian đấu giá 8 phút
+            else if (price < 50000000) //  từ 10 triệu đến nhỏ hơn 50 triệu, thời gian đấu giá 10 phút
             {
-                float duration = 8;
+                float duration = 10;
                 return duration;
             }
-            else // lớn hơn 8 triệu, thời gian đấu giá 15 phút
+            else // lớn hơn 50 triệu, thời gian đấu giá 60 phút
             {
-                float duration = 15;
+                float duration = 60;
                 return duration;
             }
         }
