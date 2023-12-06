@@ -60,10 +60,7 @@ The project is built based on the following frameworks/libraries:
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-To get a local copy up and running follow these steps.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The following will be some basic instructions for installing and running the system on a local environment.
 
 ### Requirements
 
